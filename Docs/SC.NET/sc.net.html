@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SC.NET Docs</title>
+    <link rel="stylesheet" href="../../basestyle.css">
+    <link rel="stylesheet" href="sc.net.css">
+    <script src="../../functional.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="back"></div>
+    <div id="toExpand" class="overlay">
+
+        <div class="overlay_fake_nav"><a href="javascript:void(0)" class="text_large" onclick="closeNav()">☰</a></div>
+
+        <br><br>
+        
+        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleWiki()">Wiki</a>
+        <div id="wiki_dropdown" class="text_large dropdown_global">
+            <a href="Docs/SC.NET/sc.net.html" class="text_medium sidebar_link">SC.NET</a>
+            <br>
+            <a class="text_medium sidebar_link">WinColor</a>
+            <br>
+            <a class="text_medium sidebar_link">WinTweaker</a>
+            <br>
+            <a class="text_medium sidebar_link">FastExplorer</a>
+        </div>
+
+        <br>
+
+        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleAbout()">About</a>
+        <div id="about_dropdown" class="text_large dropdown_global">
+            <a class="text_medium sidebar_link">Life</a>
+            <br>
+            <a href="index.html" class="text_medium sidebar_link">Intro</a>
+        </div>
+
+        <br>
+
+        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleVideos()">Videos</a>
+        <div id="videos_dropdown" class="text_large dropdown_global">
+            <a class="text_medium sidebar_link">About</a>
+            <br>
+            <a class="text_medium sidebar_link">About</a>
+        </div>
+
+        <br>
+
+        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleProjects()">Projects</a>
+        <div id="projects_dropdown" class="text_large dropdown_global">
+            <a class="text_medium sidebar_link">About</a>
+            <br>
+            <a class="text_medium sidebar_link">Abojjt</a>
+        </div>
+
+        <br>
+
+        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleLeetCode()">LeetCode</a>
+        <div id="leetcode_dropdown" class="text_large dropdown_global">
+            <a class="text_medium sidebar_link">Abojt</a>
+            <br>
+            <a class="text_medium sidebar_link">Abojt</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="navbar">
+            <div class="links_wrapper">
+            <a href="#" target="_blank" class="text_large"><strong>SC.NET</strong></a>
+            <a class="text_large" onclick="openNav()" id="hamburger">☰</a>
+            <a class="text_medium" onclick="openNav(); toggleWiki()">Wiki</a>
+            <a class="text_medium" onclick="openNav(); toggleAbout()">About</a>
+            <a class="text_medium" onclick="openNav(); toggleVideos()">Videos</a>
+            <a class="text_medium" onclick="openNav(); toggleProjects()">Projects</a>
+            <a class="text_medium" onclick="openNav(); toggleLeetCode()">LeetCode</a>
+  
+            </div>
+        </div>
+
+        <div class="docs_article">
+            <div style="width:25%; border-right: .5mm solid; border-color: rgb(200,200,200);">
+
+                <br>
+
+                <strong>
+                    <a class="text_large">Docs</a>
+                </strong>
+                
+                <br><br>
+
+                <strong><a class="text_medium docs_class">Swimmer</a></strong>
+                <br>
+                <a class="text_small sidebar_link">getName()</a>
+                <br>
+                <a class="text_small sidebar_link">getLocation()</a>
+                <br>
+                <a class="text_small sidebar_link">getTeam()</a>
+                <br>
+                <a class="text_small sidebar_link">getTeamName()</a>
+                <br>
+                <a class="text_small sidebar_link">getAllTeams()</a>
+                <br>
+                <a class="text_small sidebar_link">getAllTeamNames()</a>
+                <br>
+                <a class="text_small sidebar_link">getMostRecentMeet()</a>
+                <br>
+                <a class="text_small sidebar_link">getAllMeets()</a>
+                <br>
+                <a class="text_small sidebar_link">getAllMeetNames()</a>
+
+                <br><br>
+
+                <strong><a class="text_medium docs_class">Team</a></strong>
+                <br>
+                <a class="text_small sidebar_link">getName()</a>
+                <br>
+                <a class="text_small sidebar_link">getDescription()</a>
+                <br>
+                <a class="text_small sidebar_link">getTags()</a>
+                <br>
+                <a class="text_small sidebar_link">getLogoURL()</a>
+                <br>
+                <a class="text_small sidebar_link">getCoverURL()</a>
+
+                <br><br>
+
+                <strong><a class="text_medium docs_class">Meet</a></strong>
+                <br>
+                <a class="text_small sidebar_link">getName()</a>
+                
+            </div>
+            <div style="width:75%;">
+                <div style="width:90%">
+                    
+                    <br>
+
+                    <strong>
+                        <a class="text_large intro_title">Introduction</a>
+                    </strong>
+                    
+                    <br><br>
+                    
+                    <a class="text_medium">SC.NET is a C#-built, open-source SwimCloud data extraction tool, designed for individual use. This project is dedicated to providing a powerful web scraping solution tailored specifically for <i id="fakelink" onclick="openInNewTab()">SwimCloud</i>, enabling you to effortlessly extract comprehensive swim meet results, athlete profiles, and more. Dive into the world of swimming data with SC.NET, a robust and intuitive library crafted by a single developer.</a>
+
+                    <br><br>
+
+                    <strong>
+                        <a class="text_large intro_title">Why Create SC.NET?</a>
+                    </strong>
+                    
+                    <br><br>
+                    
+                    <a class="text_medium">SC.NET serves as a crucial tool in bridging the gap created by the absence of a public API from SwimCloud. While SwimCloud provides valuable data related to swimming, the lack of a dedicated API limits accessibility for developers and enthusiasts who seek programmatic access to this information. SC.NET fills this void by offering a means to retrieve and utilize SwimCloud data programmatically. Its existence becomes essential to empower developers with the ability to integrate swimming-related data into their applications, automate processes, and enhance the overall user experience. By providing an accessible and efficient method for extracting data from SwimCloud, SC.NET promotes innovation, collaboration, and the development of diverse applications within the swimming community.</a>
+                </div>
+                <div width="10%">
+                </div>
+            </div>
+        </div>
+</body>
+</html>

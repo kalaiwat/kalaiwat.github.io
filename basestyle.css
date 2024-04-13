@@ -1,0 +1,256 @@
+* {
+    background-color: white;
+    margin: 0 auto;
+    overflow-x:hidden;
+}
+
+.navbar {
+    background-color: white;
+    height:90px;
+    border-bottom: .5mm solid;
+    border-color: rgb(200,200,200);
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+@keyframes links_animate {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+    }
+}
+
+@keyframes links_animate_reverse {
+    0% {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+#hamburger {
+    display:flex;
+    animation: links_animate_reverse .5s;
+    -webkit-animation: links_animate_reverse .5s;
+    user-select: none;
+}
+
+#hamburger:hover {
+    cursor:pointer;
+    animation: links_animate .5s;
+    -webkit-animation: links_animate .5s;
+    animation-fill-mode:forwards;
+}
+
+.sidebar_link {
+    margin: 5px;
+}
+
+.sidebar_link:hover {
+    cursor:pointer;
+}
+
+.links_wrapper {
+    display:flex;
+    align-items:center;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+.links_wrapper a {
+    animation: links_animate_reverse .5s;
+    -webkit-animation: links_animate_reverse .5s;
+    margin: 30px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.links_wrapper a:hover {
+    cursor:pointer;
+    animation: links_animate .5s;
+    -webkit-animation: links_animate .5s;
+    animation-fill-mode:forwards;
+}
+
+@media only screen and (max-width: 900px) {
+    .links_wrapper {
+        width:100%;
+    }
+    .links_wrapper a {
+        display:none;
+    }
+
+
+}
+
+.main_article {
+    padding: 10px;
+}
+
+.intro {
+    display:flex;
+    align-items:center;
+}
+
+.intro p {
+    text-align:center;
+}
+
+.intro a {
+    color: #4C526C;
+}
+
+.intro_title {
+    color: black !important;
+}
+
+.socials {
+    text-decoration: none;
+}
+
+.technologies {
+    text-decoration: none;
+}
+
+/* extras / specifics */
+/* -------------------------------- */
+
+.text_large {
+    font-size: 30px;
+    font-family: "Open Sans";
+    user-select: none;
+}
+
+.text_medium {
+    font-size: 20px;
+    font-family: "Open Sans";
+}
+
+.text_small {
+    font-size: 15px;
+    font-family: "Open Sans";
+}
+
+.profile_img{ 
+    width:200px;
+    height:200px;
+    border-radius:200px;
+}
+
+.social_img {
+    width:25px;
+    height:25px;
+    margin: 2.5px;
+    border-radius:20px;
+
+    animation: links_animate_reverse .5s;
+    -webkit-animation: links_animate_reverse .5s;
+}
+
+.social_img:hover {
+    animation: links_animate .5s;
+    -webkit-animation: links_animate .5s;
+    animation-fill-mode:forwards;
+}
+
+.tech_img {
+    width:50px;
+    height:50px;
+    margin: 2.5px;
+    border-radius:10px;
+
+    animation: links_animate_reverse .5s;
+    -webkit-animation: links_animate_reverse .5s;
+}
+
+.tech_img:hover {
+    animation: links_animate .5s;
+    -webkit-animation: links_animate .5s;
+    animation-fill-mode:forwards;
+}
+
+.dropdown_global {
+    transition: .5s;
+    overflow: hidden;
+    margin:5px;
+}
+
+#wiki_dropdown {
+    height:0%;
+}
+
+#about_dropdown {
+    height:0%;
+}
+
+#videos_dropdown {
+    height:0%;
+}
+
+#projects_dropdown {
+    height:0%;
+}
+
+#leetcode_dropdown {
+    height:0%;
+}
+
+
+
+/* -------------------------------- */
+
+
+    
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay_fake_nav {
+    height:90px;
+    display:flex;
+    border-bottom: 0.5mm solid;
+    border-color: rgb(200,200,200);
+    overflow:hidden;
+  }
+
+  .overlay a {
+    text-decoration: none;
+    width:100%;
+    display:inline;
+    transition: 0.5s;
+    color: black;
+    margin: 15px;
+    padding-top: 15px;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: black;
+  }
+
+  #back {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow-x: hidden;
+  }
