@@ -1,15 +1,15 @@
 * {
-    background-color: white;
+    background-color: #1A1A1A;
     margin: 0 auto;
     overflow-x:hidden;
 }
 
 .navbar {
-    background-color: white;
+    background-color: #2A2A2A;
     height:90px;
     border-bottom: .5mm solid;
     border-color: rgb(200,200,200);
-    display:flex;
+    display: flex;
     align-items: center;
     overflow: hidden;
 }
@@ -60,6 +60,7 @@
 }
 
 .links_wrapper {
+    background-color: #2A2A2A;
     display:flex;
     align-items:center;
     overflow: hidden;
@@ -72,8 +73,9 @@
     -webkit-animation: links_animate_reverse .5s;
     margin: 30px;
 
+    background-color: #2A2A2A;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .links_wrapper a:hover {
@@ -108,11 +110,11 @@
 }
 
 .intro a {
-    color: #4C526C;
+    color: white;
 }
 
 .intro_title {
-    color: black !important;
+    color: white !important;
 }
 
 .socials {
@@ -128,17 +130,21 @@
 
 .text_large {
     font-size: 30px;
+    color:white;
     font-family: "Open Sans";
     user-select: none;
+    font-weight: bold;
 }
 
 .text_medium {
     font-size: 20px;
+    color: white;
     font-family: "Open Sans";
 }
 
 .text_small {
     font-size: 15px;
+    color: rgb(205,205,205);
     font-family: "Open Sans";
 }
 
@@ -152,6 +158,7 @@
     width:25px;
     height:25px;
     margin: 2.5px;
+    background-color: white;
     border-radius:20px;
 
     animation: links_animate_reverse .5s;
@@ -168,7 +175,7 @@
     width:50px;
     height:50px;
     margin: 2.5px;
-    border-radius:10px;
+    border-radius:20px;
 
     animation: links_animate_reverse .5s;
     -webkit-animation: links_animate_reverse .5s;
@@ -186,7 +193,7 @@
     margin:5px;
 }
 
-#wiki_dropdown {
+#docs_dropdown {
     height:0%;
 }
 
@@ -194,17 +201,17 @@
     height:0%;
 }
 
-#videos_dropdown {
+/* #videos_dropdown {
     height:0%;
-}
+} */
 
 #projects_dropdown {
     height:0%;
 }
 
-#leetcode_dropdown {
+/* #leetcode_dropdown {
     height:0%;
-}
+} */
 
 
 
@@ -218,7 +225,7 @@
     position: fixed;
     z-index: 1;
     left: 0;
-    background-color: white;
+
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -227,7 +234,7 @@
     height:90px;
     display:flex;
     border-bottom: 0.5mm solid;
-    border-color: rgb(200,200,200);
+    border-color:rgb(200,200,200);
     overflow:hidden;
   }
 
@@ -236,13 +243,15 @@
     width:100%;
     display:inline;
     transition: 0.5s;
-    color: black;
+    color: white;
     margin: 15px;
     padding-top: 15px;
+    
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: black;
+    color: white;
+    
   }
 
   #back {
@@ -254,3 +263,27 @@
     background-color: rgba(0,0,0,0.5);
     overflow-x: hidden;
   }
+
+  /* -------------------------------- */
+
+  .projects {
+    text-decoration: none;
+  }
+
+  .project_img {
+    width:300px;
+    height:150px;
+    border-radius: 20px;
+    background:black;
+    margin: 35px;
+    box-shadow: 0 0 10px whitesmoke;
+
+    animation: links_animate_reverse .5s;
+    -webkit-animation: links_animate_reverse .5s;
+  }
+
+  .project_img:hover {
+    animation: links_animate .5s;
+    -webkit-animation: links_animate .5s;
+    animation-fill-mode:forwards;
+}

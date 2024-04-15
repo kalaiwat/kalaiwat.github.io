@@ -16,68 +16,68 @@
     <div id="back"></div>
     <div id="toExpand" class="overlay">
 
-        <div class="overlay_fake_nav"><a href="javascript:void(0)" class="text_large" onclick="closeNav()">☰</a></div>
+            <div class="overlay_fake_nav"><a href="javascript:void(0)" class="text_large" onclick="closeNav()">☰</a></div>
 
-        <br><br>
-        
-        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleWiki()">Wiki</a>
-        <div id="wiki_dropdown" class="text_large dropdown_global">
-            <a href="Docs/SC.NET/sc.net.html" class="text_medium sidebar_link">SC.NET</a>
+            <br><br>
+            
+            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleDocs()">Docs</a>
+            <div id="docs_dropdown" class="text_large dropdown_global">
+                <a href="sc.net.html" class="text_medium sidebar_link">SC.NET</a>
+            </div>
+
             <br>
-            <a class="text_medium sidebar_link">WinColor</a>
+
+            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleAbout()">About</a>
+            <div id="about_dropdown" class="text_large dropdown_global">
+                <!-- <a class="text_medium sidebar_link">Life</a>
+                <br> -->
+                <a href="../../index.html" class="text_medium sidebar_link">Intro</a>
+            </div>
+
             <br>
-            <a class="text_medium sidebar_link">WinTweaker</a>
+
+            <!-- <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleVideos()">Videos</a>
+            <div id="videos_dropdown" class="text_large dropdown_global">
+                <a class="text_medium sidebar_link">About</a>
+                <br>
+                <a class="text_medium sidebar_link">About</a>
+            </div>
+
+            <br> -->
+
+            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleProjects()">Projects</a>
+            <div id="projects_dropdown" class="text_large dropdown_global">
+                <a class="text_medium sidebar_link">WinColor</a>
+                <br>
+                <a class="text_medium sidebar_link" href="https://github.com/plcid/WinPatcher" target="_blank">WinPatcher</a>
+                <br>
+                <a class="text_medium sidebar_link" href="https://github.com/plcid/FastExplorer" target="_blank">FastExplorer</a>
+            </div>
+
             <br>
-            <a class="text_medium sidebar_link">FastExplorer</a>
-        </div>
 
-        <br>
-
-        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleAbout()">About</a>
-        <div id="about_dropdown" class="text_large dropdown_global">
-            <a class="text_medium sidebar_link">Life</a>
-            <br>
-            <a href="index.html" class="text_medium sidebar_link">Intro</a>
-        </div>
-
-        <br>
-
-        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleVideos()">Videos</a>
-        <div id="videos_dropdown" class="text_large dropdown_global">
-            <a class="text_medium sidebar_link">About</a>
-            <br>
-            <a class="text_medium sidebar_link">About</a>
-        </div>
-
-        <br>
-
-        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleProjects()">Projects</a>
-        <div id="projects_dropdown" class="text_large dropdown_global">
-            <a class="text_medium sidebar_link">About</a>
-            <br>
-            <a class="text_medium sidebar_link">Abojjt</a>
-        </div>
-
-        <br>
-
-        <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleLeetCode()">LeetCode</a>
-        <div id="leetcode_dropdown" class="text_large dropdown_global">
-            <a class="text_medium sidebar_link">Abojt</a>
-            <br>
-            <a class="text_medium sidebar_link">Abojt</a>
-        </div>
+            <!-- <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleLeetCode()">LeetCode</a>
+            <div id="leetcode_dropdown" class="text_large dropdown_global">
+                <a class="text_medium sidebar_link">Abojt</a>
+                <br>
+                <a class="text_medium sidebar_link">Abojt</a>
+            </div> -->
         </div>
         </div>
 
         <div class="navbar">
+            
+
             <div class="links_wrapper">
-            <a href="#" target="_blank" class="text_large"><strong>SC.NET</strong></a>
+            <a class="text_large" href="#" target="_blank">SC.NET</a>
+
             <a class="text_large" onclick="openNav()" id="hamburger">☰</a>
-            <a class="text_medium" onclick="openNav(); toggleWiki()">Wiki</a>
+
+            <a class="text_medium" onclick="openNav(); toggleDocs()">Docs</a>
             <a class="text_medium" onclick="openNav(); toggleAbout()">About</a>
-            <a class="text_medium" onclick="openNav(); toggleVideos()">Videos</a>
+            <!-- <a class="text_medium" onclick="openNav(); toggleVideos()">Videos</a> -->
             <a class="text_medium" onclick="openNav(); toggleProjects()">Projects</a>
-            <a class="text_medium" onclick="openNav(); toggleLeetCode()">LeetCode</a>
+            <!-- <a class="text_medium" onclick="openNav(); toggleLeetCode()">LeetCode</a> -->
   
             </div>
         </div>
@@ -87,13 +87,11 @@
 
                 <br>
 
-                <strong>
-                    <a class="text_large">Docs</a>
-                </strong>
+                <a class="text_large">Docs</a>
                 
                 <br><br>
 
-                <strong><a class="text_medium docs_class">Swimmer</a></strong>
+                <a class="text_medium docs_class">Swimmer</a>
                 <br>
                 <a class="text_small sidebar_link">getName()</a>
                 <br>
@@ -115,7 +113,7 @@
 
                 <br><br>
 
-                <strong><a class="text_medium docs_class">Team</a></strong>
+                <a class="text_medium docs_class">Team</a>
                 <br>
                 <a class="text_small sidebar_link">getName()</a>
                 <br>
@@ -129,7 +127,7 @@
 
                 <br><br>
 
-                <strong><a class="text_medium docs_class">Meet</a></strong>
+                <a class="text_medium docs_class">Meet</a>
                 <br>
                 <a class="text_small sidebar_link">getName()</a>
                 
@@ -139,19 +137,19 @@
                     
                     <br>
 
-                    <strong>
+                    
                         <a class="text_large intro_title">Introduction</a>
-                    </strong>
+                    
                     
                     <br><br>
                     
-                    <a class="text_medium">SC.NET is a C#-built, open-source SwimCloud data extraction tool, designed for individual use. This project is dedicated to providing a powerful web scraping solution tailored specifically for <i id="fakelink" onclick="openInNewTab()">SwimCloud</i>, enabling you to effortlessly extract comprehensive swim meet results, athlete profiles, and more. Dive into the world of swimming data with SC.NET, a robust and intuitive library crafted by a single developer.</a>
+                    <a class="text_medium">SC.NET is a C#-built, open-source SwimCloud data extraction tool, designed for individual use. This project is dedicated to providing a powerful web scraping solution tailored specifically for <i id="fakelink" onclick="openInNewTab('https://swimcloud.com/')">SwimCloud</i>, enabling you to effortlessly extract comprehensive swim meet results, athlete profiles, and more. Dive into the world of swimming data with SC.NET, a robust and intuitive library crafted by a single developer.</a>
 
                     <br><br>
 
-                    <strong>
+                    
                         <a class="text_large intro_title">Why Create SC.NET?</a>
-                    </strong>
+                    
                     
                     <br><br>
                     

@@ -19,65 +19,64 @@
 
             <br><br>
             
-            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleWiki()">Wiki</a>
-            <div id="wiki_dropdown" class="text_large dropdown_global">
+            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleDocs(1)">Docs</a>
+            <div id="docs_dropdown" class="text_large dropdown_global">
                 <a href="Docs/SC.NET/sc.net.html" class="text_medium sidebar_link">SC.NET</a>
-                <br>
-                <a class="text_medium sidebar_link">WinColor</a>
-                <br>
-                <a class="text_medium sidebar_link">WinTweaker</a>
-                <br>
-                <a class="text_medium sidebar_link">FastExplorer</a>
             </div>
 
             <br>
 
-            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleAbout()">About</a>
+            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleAbout(1)">About</a>
             <div id="about_dropdown" class="text_large dropdown_global">
-                <a class="text_medium sidebar_link">Life</a>
-                <br>
+                <!-- <a class="text_medium sidebar_link">Life</a>
+                <br> -->
                 <a href="index.html" class="text_medium sidebar_link">Intro</a>
             </div>
 
             <br>
 
-            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleVideos()">Videos</a>
+            <!-- <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleVideos()">Videos</a>
             <div id="videos_dropdown" class="text_large dropdown_global">
                 <a class="text_medium sidebar_link">About</a>
                 <br>
                 <a class="text_medium sidebar_link">About</a>
             </div>
 
-            <br>
+            <br> -->
 
-            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleProjects()">Projects</a>
+            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleProjects(3)">Projects</a>
             <div id="projects_dropdown" class="text_large dropdown_global">
-                <a class="text_medium sidebar_link">About</a>
+                <a class="text_medium sidebar_link">WinColor</a>
                 <br>
-                <a class="text_medium sidebar_link">Abojjt</a>
+                <a class="text_medium sidebar_link" href="https://github.com/plcid/WinPatcher" target="_blank">WinPatcher</a>
+                <br>
+                <a class="text_medium sidebar_link" href="https://github.com/plcid/FastExplorer" target="_blank">FastExplorer</a>
             </div>
 
             <br>
 
-            <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleLeetCode()">LeetCode</a>
+            <!-- <a class="text_large sidebar_link overlay_fake_nav" onclick="toggleLeetCode()">LeetCode</a>
             <div id="leetcode_dropdown" class="text_large dropdown_global">
                 <a class="text_medium sidebar_link">Abojt</a>
                 <br>
                 <a class="text_medium sidebar_link">Abojt</a>
-            </div>
+            </div> -->
         </div>
-    </div>
+        </div>
 
         <div class="navbar">
+            
+
             <div class="links_wrapper">
-            <a class="text_large"><strong>PLCID</strong></a>
+            <a class="text_large">PLCID</a>
+
             <a class="text_large" onclick="openNav()" id="hamburger">☰</a>
 
-            <a class="text_medium" onclick="openNav(); toggleWiki()">Wiki</a>
+            <a class="text_medium" onclick="openNav(); toggleDocs()">Docs</a>
             <a class="text_medium" onclick="openNav(); toggleAbout()">About</a>
-            <a class="text_medium" onclick="openNav(); toggleVideos()">Videos</a>
+            <!-- <a class="text_medium" onclick="openNav(); toggleVideos()">Videos</a> -->
             <a class="text_medium" onclick="openNav(); toggleProjects()">Projects</a>
-            <a class="text_medium" onclick="openNav(); toggleLeetCode()">LeetCode</a>
+            <!-- <a class="text_medium" onclick="openNav(); toggleLeetCode()">LeetCode</a> -->
   
             </div>
         </div>
@@ -91,9 +90,7 @@
 
                 <br><br>
 
-                <strong>
-                    <a class="text_large intro_title">Hi, I'm PLCID.</a>
-                </strong>
+                <a class="text_large intro_title">PLCID</a>
                 
                 <br><br>
                 
@@ -102,24 +99,24 @@
                 <br><br>
 
                 <a class="technologies">
-                    <a href="https://github.com/PLCID" style="text-decoration: none;" target="_blank">
+                    <a style="text-decoration: none;" target="_blank">
                         <img class="tech_img" src="https://www.vikingsoftware.com/wp-content/uploads/2024/02/C-2.png">
                     </a>
 
-                    <a href="https://discord.com/users/1225908802340126783" style="text-decoration: none;" target="_blank">
+                    <a style="text-decoration: none;" target="_blank">
                         <img class="tech_img" src="https://www.netgen.co.za/wp-content/uploads/2022/03/C-image-for-Netgen-1024x1024.png">
                     </a>
 
-                    <a href="https://discord.com/users/1225908802340126783" style="text-decoration: none;" target="_blank">
+                    <a style="text-decoration: none;" target="_blank">
                         <img class="tech_img" src="https://www.pngkey.com/png/full/264-2646582_logo-transparent-background-java.png">
                     </a>
-                    <a href="https://discord.com/users/1225908802340126783" style="text-decoration: none;" target="_blank">
+                    <a style="text-decoration: none;" target="_blank">
                         <img class="tech_img" src="https://clipart-library.com/new_gallery/289-2896071_python-logo-png-165709.png">
                     </a>
-                    <a href="https://discord.com/users/1225908802340126783" style="text-decoration: none;" target="_blank">
+                    <a style="text-decoration: none;" target="_blank">
                         <img class="tech_img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg">
                     </a>
-                    <a href="https://discord.com/users/1225908802340126783" style="text-decoration: none;" target="_blank">
+                    <a style="text-decoration: none;" target="_blank">
                         <img class="tech_img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg">
                     </a>
                 </a>
@@ -128,15 +125,30 @@
 
                 <a class="socials">
                     <a href="https://github.com/PLCID" style="text-decoration: none;" target="_blank">
-                        <img class="social_img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                        <img class="social_img" src="https://cdn.iconscout.com/icon/free/png-256/free-github-online-project-hosting-website-logo-46235.png">
                     </a>
 
-                    <a href="https://discord.com/users/1225908802340126783" style="text-decoration: none;" target="_blank">
+                    <a href="https://discord.com/users/1225908802340126783"style="text-decoration: none;" target="_blank">
                         <img class="social_img" src="https://cdn.icon-icons.com/icons2/3398/PNG/512/discord_logo_icon_214740.png">
                     </a>
                 </a>
+
+                <br><br>
+                <br><br>
+
+                <a class="text_large intro_title">Projects</a>
+
+                <br><br>
                 
-            </div></p>
+                <a class="projects">
+                    <a href="https://github.com/plcid/WinPatcher" style="text-decoration: none; " target="_blank">
+                        <img class="project_img" src="https://opengraph.githubassets.com/ea32c06b7c1da972225949d38fab70466caed4f2511175a866cfb53b20a3966c/plcid/WinPatcher">
+                    </a>
+                    <a href="https://github.com/plcid/FastExplorer" style="text-decoration: none;" target="_blank">
+                        <img class="project_img" src="https://opengraph.githubassets.com/ea32c06b7c1da972225949d38fab70466caed4f2511175a866cfb53b20a3966c/plcid/FastExplorer">
+                    </a>                 
+                </a>        
+        </p></div>
         </div>
 </body>
 </html>
