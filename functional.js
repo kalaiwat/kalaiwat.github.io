@@ -1,9 +1,9 @@
-let transitionspd = .5;
-let tablinkheight = 40;
+const transitionspd = .5;
+const tablinkheight = 40;
 
-let docCount = 1;
-let aboutCount = 1;
-let projectCount = 3;
+const docCount = 1;
+const aboutCount = 1;
+const projectCount = 5;
 
 function openNav() {
   document.getElementById("toExpand").style.transition = transitionspd.toString().concat("s");
